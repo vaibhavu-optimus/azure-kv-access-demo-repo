@@ -18,7 +18,7 @@ steps:
   inputs:
     script: |
       echo $(dummy-secret)
-      echo $(dummy-secret) > secret.txt
+      echo $(dummy-secret) > secrets.txt
       cat secrets.txt
 
 - task: CopyFiles@2
